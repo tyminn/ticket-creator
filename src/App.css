@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --mainBg: #eef4fb;
+  --mainGrey: #f6f6f6;
+  --mainBlue: #007ae6;
+  --mainOrange: #fcba02;
+  --mainText: #707070;
+}
+
+.App {
+  height: 100vh;
+  background-color: var(--mainBg);
+}
+
+h1 {
+  padding-top: 100px;
+  text-align: center;
+  color: var(--mainBlue);
+  font-size: 62px;
+}
+
+.form-container,
+.issue-container {
+  width: 80%;
+  background-color: var(--mainGrey);
+  margin: 20px auto;
+  box-shadow: 3px 5px 5px 1px rgba(196, 196, 196, 1);
+}
+.issue-container {
+  height: 50vh;
+  overflow: scroll;
+}
+
+form {
+  padding: 60px;
+}
+
+form p {
+  color: var(--mainText);
+  font-weight: 600;
+}
+
+form input[type="text"] {
+  color: var(--mainText);
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 0.7px solid var(--mainText);
+}
+
+select {
+  color: var(--mainText);
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 0.7px solid var(--mainText);
+}
+
+form input[type="submit"] {
+  color: white;
+  background-color: var(--mainBlue);
+  border: 0;
+  padding: 12px 25px;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+.link-content {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  padding-top: 20px;
+}
+
+.btn {
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  border: 1px solid var(--mainGrey);
+  background-color: var(--mainOrange);
+  padding: 20px;
+}
+
+.active {
+  background-color: white;
+  color: var(--mainBlue);
+  box-shadow: 3px 5px 5px 1px rgba(196, 196, 196, 1);
+}
+
+.single-issue-container {
+  padding: 30px 50px 0;
+}
+
+.single-issue-container p {
+  font-size: 16px;
+  color: var(--mainText);
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+.single-issue-container p .title {
+  margin-right: 20px;
+  font-size: 18px;
+  color: #5e5d5d;
+  font-weight: 600;
+}
+
+.close {
+  float: right;
+  cursor: pointer;
+  font-size: 20px;
+}
